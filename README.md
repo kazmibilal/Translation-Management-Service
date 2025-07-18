@@ -47,12 +47,14 @@ Note : This API is secured using JWT Authentication.
 
 
 IN order to fully utilize the API Service you must follow the order of execution
+
    1 -  First: Create languages i-e  
         POST /api/languages 
         {
             "code": "en",
             "name": "English"
         }
+
    2 - Second: Create tags
        POST /api/tags
        {
@@ -67,6 +69,7 @@ IN order to fully utilize the API Service you must follow the order of execution
           "description": "Loading message displayed during operations",
           "tagNames": ["web", "mobile", "common"]
       }
+
   4 - Create all translations
       POST /api/translations
       {
